@@ -23,14 +23,26 @@
       ).catch(err => { 
         // Do something for an error here 
       }); 
+    </script>-->
+<script type="text/javascript"> 
+      var apiUrl = 'http://ip172-18-0-6-c7ml0gdmrepg00bvvrq0-9080.direct.labs.play-with-docker.com/system/properties'; 
+      fetch(apiUrl).then(response => { 
+        return response.json(); }
+      ).then(data => { 
+        // Work with JSON data here 
+        console.log(data); }
+      ).catch(err => { 
+        // Do something for an error here 
+      }); 
     </script>
--->
+
+
   </head>
   <body>
   <h1>Hello there! ;-) </h1>
   
   <div id="root"></div>
 
-  <script src="script.js"></script>
+  <!--<script src="script.js"></script> -->
 </body>
 </html>
