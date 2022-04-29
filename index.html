@@ -12,7 +12,7 @@
         // Do something for an error here 
       }); 
     </script>-->
-   
+  <!-- 
  <script type="text/javascript"> 
       var apiUrl = 'https://ghibliapi.herokuapp.com/films'; 
       fetch(apiUrl).then(response => { 
@@ -23,7 +23,7 @@
       ).catch(err => { 
         // Do something for an error here 
       }); 
-    </script>
+    </script>-->
 <!--<script type="text/javascript"> 
       var apiUrl = 'http://ip172-18-0-40-c7mqp1tmrepg00c00ch0-9080.direct.labs.play-with-docker.com/system/properties-new'; 
       fetch(apiUrl).then(response => { 
@@ -36,6 +36,21 @@
       }); 
     </script>
 -->
+    <script type="text/javascript"> 
+      var apiUrl = 'http://ip172-18-0-48-c9lniqs33d5g008fq8f0-8080.direct.labs.play-with-docker.com/words'; 
+      fetch(apiUrl).then(response => { 
+        return response.json(); }
+      ).then(data => { 
+        // Work with JSON data here 
+        console.log(data);
+        document.getElementById("response").innerHTML = data.random;
+      }
+      ).catch(err => { 
+        // Do something for an error here 
+      }); 
+    </script>
+    <p id="response">nothing</p>
+   
    
 
 
